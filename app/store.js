@@ -1,6 +1,6 @@
 import { createStore } from 'redux'
 import { persistStore } from 'redux-persist'
-import reducer from 'reducers'
+import reducer from 'app/reducers'
 
 
 import { AsyncStorage } from 'react-native'

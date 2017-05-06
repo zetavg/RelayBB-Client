@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Provider, connect } from 'react-redux'
-import store from 'store'
-import SplashView from 'views/SplashView'
-import WelcomeView from 'views/WelcomeView'
+import store from 'app/store'
+import Navigator from 'app/navigator'
+import SplashView from 'app/views/SplashView'
 
 export default class App extends Component {
   render() {
@@ -18,7 +18,7 @@ class Main extends Component {
   render() {
     if (this.props.ready) {
       return (
-        <WelcomeView />
+        <Navigator />
       )
     }
 
